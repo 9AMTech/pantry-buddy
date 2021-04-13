@@ -1,0 +1,739 @@
+/* Doc and Nav Bar Styles */
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #eee8e2;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+    font-weight: 550;
+    height: 100%;
+}
+
+.container {
+    width: 90%;
+}
+
+header {
+    background-image: linear-gradient(180deg, #ce7451, #8f4528);
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding-left: 12em;
+}
+
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    padding-top: 3.5%;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 3.7em;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+
+/*  home.php Styles */
+
+#homeGrid {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 30% 70% 7%;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 1%;
+    overflow: visible;
+    font-size: 1.5em;
+    padding-bottom: 10%;
+}
+
+#homeGrid img {
+    width: 200px;
+    height: 200px;
+}
+
+.welcome {
+    grid-column: 1 / 4;
+    grid-row: 1 / 1;
+}
+
+.whatsNew {
+    grid-column: 1 / 4;
+    grid-row: 4 / 4;
+}
+
+.homeImage {
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+}
+
+.homeImage img {
+    width: 100%;
+    height: 40em;
+}
+
+footer {
+    
+    background-image: linear-gradient(180deg, #eee8e2, #dcbfad);
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    height: 6%;
+    left: 0;
+    padding-top: 2%;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+/* aboutUs.php styles */
+
+
+#aboutUsGrid {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 30% 30%;
+    grid-template-rows: 36% 46% 43%;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15%;
+    row-gap: 20%;
+    overflow: visible;
+    font-size: 1.5em;
+    padding-top: 3%;
+    padding-bottom: 22%;
+}
+
+.aboutUsInfo {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.contactMe {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.helpMe {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+aside img {
+    width: 20em;
+    height: 12em;
+}
+
+
+/* myPantry.php, add.php, remove.php, edit.php Styles */
+
+#loginErrorMessage {
+    padding-top: 30%;
+}
+
+#pantryOwner {
+    padding: 4% 0;
+}
+
+#pantryTable, 
+#pantryTableRemove,
+#pantryTableAddEdit {
+    display: grid;
+    padding: 0;
+    margin: auto;
+    width: 66%;
+    height: 100%;
+    text-align: left;
+}
+
+#pantryTableRemove {
+    width: 75%;
+}
+
+#pantryTable table,
+#pantryTableRemove table,
+#pantryTableAddEdit table {
+    border-collapse: collapse;
+    font-size: 1.1em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#pantryTable thead tr,
+#pantryTableRemove thead tr,
+#pantryTableAddEdit thead tr {
+    background-color: rgb(10 167 88);
+    color: black;
+    text-align: left;
+    font-weight: bold;
+}   
+
+#pantryTable th,
+#pantryTable td,
+#pantryTableRemove th,
+#pantryTableRemove td,
+#pantryTableAddEdit th,
+#pantryTableAddEdit td {
+    padding: 20px 15px;
+}
+
+#pantryTable tbody tr,
+#pantryTableRemove tbody tr,
+#pantryTableAddEdit tbody tr {
+    border-bottom: 1px solid #4236368c;
+}
+
+#pantryTable tbody tr:nth-of-type(even),
+#pantryTableRemove tbody tr:nth-of-type(even),
+#pantryTableAddEdit tbody tr:nth-of-type(even) {
+    background-color:  #81967e;
+}
+
+#pantryTable tbody tr:last-of-type,
+#pantryTableRemove tbody tr:last-of-type,
+#pantryTableAddEdit tbody tr:last-of-type {
+    border-bottom: 2px solid rgb(10 167 88);
+}
+
+#pantryTable tbody .submitButton {
+    padding-left: 2.3%;
+}
+
+.expiresSoon {
+    background-color: rgba(251, 220, 59, 0.94);
+}
+
+.expired {
+    background-color: rgba(247, 55, 55, .93);
+}
+
+/* signPage.php Styles */
+
+#signPageGrid {
+        margin: 0;
+        padding: 10% 0 19.8% 0;
+        height: 100%;
+        width: 100%;
+        overflow: auto;
+        display: grid;
+        grid-template-columns: 30% 30%;
+        grid-template-rows: 110% 70%;
+        align-items: center;
+        justify-content: center;
+        grid-gap: 1%;
+        overflow: visible;
+        font-size: 1.5em;
+}
+
+.signPageQuestion {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+
+.signPageButton {
+    margin: 0 0 0 18%;
+    display: block;
+    text-decoration: none;
+    width: 10%;
+    height: 100%;
+    background: #DBAD6A;
+    padding: 9% 27%;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    line-height: 25px;
+    border: solid 1px black;
+}
+
+
+/*  signIn.php + signUp.php Styles */
+
+#signInFieldset {
+    margin: 8% 24% 9.2% 24%;
+    padding-top: 3%;
+    width: 50%;
+}
+
+#signUpFieldset {
+    margin: 8% 24% 4.5% 24%;
+    padding-top: 3%;
+    width: 50%;
+}
+
+legend {
+    text-align: left;
+    font-size: 1.5em;
+    padding-left: 1%;
+}
+
+#signMessage {
+    padding-top: 6%;
+    font-size: 1.7em;
+}
+
+.signInButton {
+    margin: 2% 46%;
+    padding: 1%;
+    display: block;
+    text-decoration: none;
+    width: 10%;
+    height: 100%;
+    background: #DBAD6A;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    line-height: 25px;
+    border: solid 1px black;
+}
+
+#signUpGrid {
+    margin: 0;
+    padding: 0 0 27% 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 34% 34% 34% 34% 19%;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 1%;
+    overflow: visible;
+    font-size: 1.5em;
+}
+
+.signUp1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.signUp2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.signUp3 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.signUp4 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.signUp5 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.signUp6 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.signUp7 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.signUp8 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.signUp9 {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+.signUp10 {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+.signUp11 {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+}
+
+
+.signUpButton {
+    margin: 2% 34%;
+    padding: 2% 3% 3% 3%;
+    display: block;
+    text-decoration: none;
+    width: 32.7%;
+    height: 100%;
+    background: #DBAD6A;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    line-height: 25px;
+    border: solid 1px black;
+}
+
+.error {
+    font-size: 80%;
+    font-weight: normal;
+    margin-top: 0;
+    text-align: left;
+    width: 100%;
+    margin: auto;
+    color: red;
+}
+
+
+/* laptop Responsiveness */
+@media screen and (max-width: 1440px) {
+
+    .logo {
+        padding-left: 9em;
+    }
+
+
+    /* home.php Styles */
+
+    #homeGrid {
+        padding-bottom: 12%;
+    }
+
+
+    /* aboutUs.php Styles */
+
+    #aboutUsGrid {
+        padding-bottom: 30%;
+    }
+
+
+    /* signPage.php Styles */
+
+    #signPageGrid{
+        padding: 10% 0 26.25% 0;
+    }
+
+    /*  signIn.php + signUp.php Styles */
+
+    #signInFieldset {
+        margin: 8% 24% 13.55% 24%;
+    }
+
+    #signUpFieldset {
+        margin: 8% 24% 0.5% 24%;
+    }
+
+    #signUpGrid {
+        padding-bottom: 42%;
+        grid-template-rows: 34% 34% 34% 34% 5%;
+    }
+
+
+    /* myPantry.php, add.php, remove.php, edit.php Styles */
+
+    #pantryTable table,
+    #pantryTableRemove table {
+        font-size: .99em;
+    }
+
+    #pantryTable tbody .addSubmitButton {
+        padding-left: 0.3%;
+    }
+
+
+}
+
+/* Average Phone Width Responsiveness */
+@media screen and (max-width: 480px) {
+
+
+    .container {
+        width: 100%;
+    }
+
+    .logo {
+        padding: 0 30%;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav li {
+        margin: 1% 2%;
+    }
+
+    #clock-text {
+        float: left;
+        width: 100%;
+        margin: 0;
+        padding: 2% 0;
+    }
+
+    /* home.php Styles */
+
+    #homeGrid {
+        grid-template-columns: 25% 25% 25%;
+        grid-template-rows: 14% 30% 30% 30%;
+        font-size: 1.25em;
+        padding-bottom: 60%;
+    }
+
+    .homeImage img {
+        height: 18em;
+    }
+
+    article {
+        grid-column: 1 / 4;
+    }
+
+    .whatsNew {
+        grid-row: auto;
+    }
+
+    /* aboutUs.php Styles */
+    #aboutUsGrid {
+        padding-top: 13%;
+        padding-bottom: 36%;
+        grid-template-columns: 80%;
+        grid-template-rows: 15% 22% 22% 22% 22%;
+        grid-gap: 0;
+        grid-row-gap: 3%;
+    }
+
+    .aboutUsInfo {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    
+    .contactMe {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+    
+    .helpMe {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+    
+    aside img {
+        width: 13em;
+        height: 7em;
+    }
+
+
+    /* myPantry.php, add.php, remove.php, edit.php Styles */
+    
+    .itemDescription {
+        display: none;
+    }
+
+    #pantryTable,
+    #pantryTableRemove,
+    #pantryTableAddEdit {
+        width: 96%;
+    }
+
+    #pantryTableRemove table {
+        font-size: 77%;
+    }
+
+    #pantryTableAddEdit th,
+    #pantryTableAddEdit td {
+        float: left;
+        width: 100%;
+        text-align: center;
+        padding: 2% 0;
+    }
+
+
+
+    /* signPage.php Styles */
+    #signPageGrid {
+        padding: 25% 0 85.3% 0;
+        grid-template-columns: 45% 45%;
+        font-size: 1.5em;
+    }
+
+    .signPageButton {
+        margin: 0 15%;
+        width: 15%;
+        padding: 8% 28%;
+    }
+
+    #signUpFieldset{
+        padding: 0;
+        margin: 0 7%;
+        width: 85%;
+    }
+
+    #signUpGrid {
+        font-size: 100%;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 20% 20% 20% 20% 20% 20% 5%;
+        grid-gap: 5%;
+        padding-bottom: 45%;
+    }
+
+    #signMessage {
+        font-size: 1.2em;
+        padding-top: 25%;
+    }
+
+    .signUp1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    
+    .signUp2 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    
+    .signUp3 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    
+    .signUp4 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    
+    .signUp5 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+    
+    .signUp6 {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+    
+    .signUp7 {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+    
+    .signUp8 {
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+    }
+    
+    .signUp9 {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+    
+    .signUp10 {
+        grid-column: 2 / 3;
+        grid-row: 5 / 6;
+    }
+    
+    .signUp11 {
+        grid-column: 1 / 3;
+        grid-row: 6 / 7;
+    }
+
+    legend {
+        font-size: 1em;
+    }
+
+    .signInButton {
+        width: 30%;
+        margin: 2% 35%;
+    }
+
+    #signInFieldset {
+        margin: 8% 24% 55.3% 24%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    /*  home.php Styles */
+    
+    #homeGrid {
+        padding-bottom: 80%;
+    }
+    
+    
+    /*  aboutUs.php Styles  */
+    
+    #aboutUsGrid{
+        padding-bottom: 55%;
+    }
+    
+    .contactMe a {
+        font-size: 80%;
+    }
+    
+    
+    /* signPage.php Styles   */
+    #signPageGrid {
+        padding-bottom: 119%;
+    }
+    
+    /* signIn.php Styles   */
+    #signInFieldset {
+        margin-bottom: 83%;
+    }
+    
+    /* signUp.php Styles   */
+    #signUpGrid {
+        font-size: 80%;
+        padding-bottom: 50%;
+    }
+    
+    #signUpFieldset {
+        margin: 5%;
+    }
+    
+    #signUpGrid input[type=text],
+    #signUpGrid input[type=password],
+    #signUpGrid input[type=email]{
+        width: 90%;
+    }
+    
+}
+
