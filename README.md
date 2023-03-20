@@ -3,7 +3,7 @@
 **-CURRENTLY UNDER MAINTENANCE-** <br> 
 Pantry Buddy is a fullstack application that keeps track of your groceries based on user set expiration dates!
 
-(https://github.com/9AMTech/pantry-buddy/blob/main/thumbnail.png)
+(https://github.com/9AMTech/pantry-buddy/blob/main/thumbnail.png?raw=true)
 
 ## How It's Made:
 
