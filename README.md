@@ -13,7 +13,6 @@ groceries, and edit/delete groceries. Ontop of it all the entire website is dyna
 experience personal, like greeting them by name when they log in!
 
 ## Optimizations
-*(optional)*
 
 Now that I graduated college and started learning new technologies, I would definitely love to come back and rebuild this site in React when I have the time. It'll be
 a good test of my skill and see how far I've come along over the years! PHP is definitely outdated technology so I feel like I'd have quite an easier time rebuilding this
